@@ -21,3 +21,7 @@
 .article-detail .article-figure img{width:100%;height:auto;max-height:none;object-fit:contain}
 
 .article-detail .article-figure.article-figure-compact{width:70%;margin:28px auto 36px}
+
+/* Give scientific figures a continuous white canvas, including transparent areas. */
+.article-detail .article-figure{background:#fff;border-radius:0;overflow:hidden}
+.article-detail .article-figure img{background:#fff;border-radius:0}
