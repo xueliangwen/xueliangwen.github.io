@@ -27,3 +27,5 @@
 .article-detail .article-figure img{background:#fff;border-radius:0}
 
 .article-detail .article-figure.article-figure-80{width:80%;margin:28px auto 36px}
+
+.article-detail .article-figure video{display:block;width:100%;height:auto;max-width:100%;background:#000}
