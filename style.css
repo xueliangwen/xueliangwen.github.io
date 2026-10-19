@@ -47,6 +47,7 @@
 .article-media-pair{align-items:stretch}
 .article-media-pair figure{aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;overflow:hidden}
 .article-media-pair img,.article-media-pair video{width:100%;height:100%;object-fit:contain;background:#fff}
+<<<<<<< HEAD
 
 /* Keep equal-height media above separate captions. */
 .article-media-pair figure{aspect-ratio:auto;display:grid;grid-template-rows:auto 1fr;align-items:stretch;overflow:visible}
@@ -59,3 +60,5 @@
 .ballast-video-panel video{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;background:#fff}
 .ballast-video-panel figcaption{padding:8px 10px;text-align:center;line-height:1.5;background:#555;color:#fff;flex:1}
 @media(max-width:600px){.ballast-video-grid{gap:12px 8px}.ballast-video-panel figcaption{font-size:12px;padding:6px 4px}}
+=======
+>>>>>>> 7b67e70f05362fe5bac87a38c6d0f1d972309d16
