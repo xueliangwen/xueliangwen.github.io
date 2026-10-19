@@ -36,3 +36,26 @@
 .operation-video video{display:block;width:100%;max-width:100%;height:auto;background:#000}
 .operation-video figcaption{display:block;margin:0;padding:6px 10px;background:#555;color:#fff;text-align:center;font-size:15px;font-weight:500;line-height:1.4}
 @media(max-width:600px){.operation-videos{gap:8px}.operation-video figcaption{font-size:12px;padding:5px 4px}}
+
+/* Image and video side by side */
+.article-media-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:center;gap:16px;width:100%;margin:28px 0 36px}
+.article-media-pair figure{margin:0;min-width:0;background:#fff}
+.article-media-pair img,.article-media-pair video{display:block;width:100%;height:auto;max-width:100%;background:#fff;border-radius:0}
+@media(max-width:600px){.article-media-pair{gap:8px}}
+
+/* Equal-height image and video panels without distortion or cropping. */
+.article-media-pair{align-items:stretch}
+.article-media-pair figure{aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.article-media-pair img,.article-media-pair video{width:100%;height:100%;object-fit:contain;background:#fff}
+
+/* Keep equal-height media above separate captions. */
+.article-media-pair figure{aspect-ratio:auto;display:grid;grid-template-rows:auto 1fr;align-items:stretch;overflow:visible}
+.article-media-pair img,.article-media-pair video{width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;min-width:0}
+.article-media-pair figcaption{margin:0;padding:8px 12px;text-align:center;line-height:1.5;background:#fff}
+
+/* Four ballast-control comparison videos */
+.ballast-video-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 16px;width:100%;margin:28px 0 36px;align-items:stretch}
+.ballast-video-panel{margin:0;min-width:0;display:flex;flex-direction:column;background:#fff}
+.ballast-video-panel video{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;background:#fff}
+.ballast-video-panel figcaption{padding:8px 10px;text-align:center;line-height:1.5;background:#555;color:#fff;flex:1}
+@media(max-width:600px){.ballast-video-grid{gap:12px 8px}.ballast-video-panel figcaption{font-size:12px;padding:6px 4px}}
